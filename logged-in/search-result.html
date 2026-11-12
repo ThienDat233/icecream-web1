@@ -26,8 +26,8 @@
                         class="logo-accent">cream</span></a>
 
                 <div class="header-search flex-grow-1 mx-lg-4 d-none d-lg-flex">
-                    <form class="d-flex w-100" role="search" action="search-results.html" method="GET">
-                        <select class="form-select flex-shrink-0" name="category" aria-label="All categories">
+                    <div class="d-flex w-100" role="search">
+                        <select class="form-select flex-shrink-0" aria-label="All categories">
                             <option value="" selected>Các Loại Kem</option>
                             <option value="Kem Hộp">Kem Hộp</option>
                             <option value="Kem Viên">Kem Viên</option>
@@ -37,10 +37,11 @@
                             <option value="Bánh Kem Lạnh">Bánh Kem Lạnh</option>
                             <option value="Topping">Topping</option>
                         </select>
-                        <input class="form-control" type="search" name="q" id="headerSearchInput" value="Kem trái cây"
+                        <input class="form-control" type="search" id="headerSearchInput" value="Kem trái cây"
                             placeholder="Tìm kiếm với hơn 3.600 sản phẩm" aria-label="Search">
-                        <button class="btn-search border-0" type="submit">Tìm</button>
-                    </form>
+                        <a href="search-result.html"
+                            class="btn-search border-0 d-inline-flex align-items-center justify-content-center text-decoration-none">Tìm</a>
+                    </div>
                 </div>
 
                 <div class="d-flex align-items-center header-icons">
@@ -101,52 +102,52 @@
                 <!-- Sidebar -->
                 <aside class="col-lg-3 order-2 order-lg-1">
                     <div class="widget widget-search">
-                        <form class="input-group" action="search-results.html" method="GET">
-                            <input type="search" name="q" id="sidebarSearchInput" class="form-control"
+                        <div class="input-group">
+                            <input type="search" id="sidebarSearchInput" class="form-control"
                                 value="Kem trái cây" placeholder="Tìm sản phẩm">
-                            <button class="btn" type="submit"><i class="bi bi-search"></i></button>
-                        </form>
+                            <a href="search-result.html"
+                                class="btn d-inline-flex align-items-center justify-content-center"><i
+                                    class="bi bi-search"></i></a>
+                        </div>
                     </div>
 
                     <div class="widget">
                         <h5 class="widget-title">Danh mục phù hợp</h5>
                         <ul class="list-unstyled widget-list">
-                            <li><a href="search-results.html?q=Kem" class="active-link">Tất cả kết quả <span class="count">(6)</span></a></li>
-                            <li><a href="search-results.html?q=Kem+trái+cây">Kem trái cây <span class="count">(3)</span></a></li>
-                            <li><a href="search-results.html?q=Kem+hộp">Kem hộp <span class="count">(1)</span></a></li>
-                            <li><a href="search-results.html?q=Kem+viên">Kem viên <span class="count">(1)</span></a></li>
-                            <li><a href="search-results.html?q=Kem+que">Kem que <span class="count">(1)</span></a></li>
+                            <li><a href="search-result.html" class="active-link">Tất cả kết quả <span class="count">(6)</span></a></li>
+                            <li><a href="search-result.html">Kem trái cây <span class="count">(3)</span></a></li>
+                            <li><a href="search-result.html">Kem hộp <span class="count">(1)</span></a></li>
+                            <li><a href="search-result.html">Kem viên <span class="count">(1)</span></a></li>
+                            <li><a href="search-result.html">Kem que <span class="count">(1)</span></a></li>
                             <li><a href="shop.html">Xem toàn bộ danh mục <span class="count">(248)</span></a></li>
                         </ul>
                     </div>
 
                     <div class="widget">
                         <h5 class="widget-title">Lọc theo giá</h5>
-                        <form class="row g-3 checkout-form needs-validation" novalidate="">
+                        <div class="row g-3 checkout-form">
                             <div class="col-md-6">
                                 <label>Từ</label>
-                                <input type="text" class="form-control mb-0" placeholder="5000"
-                                    oninput="formatMoney(this)">
+                                <input type="text" class="form-control mb-0" placeholder="5000">
                             </div>
                             <div class="col-md-6">
                                 <label>Đến</label>
-                                <input type="text" class="form-control mb-0" placeholder="65000"
-                                    oninput="formatMoney(this)">
+                                <input type="text" class="form-control mb-0" placeholder="65000">
                             </div>
                             <div class="col-12 mt-3">
-                                <button type="button" class="btn btn-green w-100 py-2">Áp dụng lọc</button>
+                                <a href="search-result.html" class="btn btn-green w-100 py-2">Áp dụng lọc</a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                     <div class="widget">
                         <h5 class="widget-title">Từ khóa phổ biến</h5>
                         <div class="d-flex flex-wrap gap-2">
-                            <a href="search-results.html?q=Mochi" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Kem Mochi</a>
-                            <a href="search-results.html?q=Matcha" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Matcha</a>
-                            <a href="search-results.html?q=Kem+dừa" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Kem dừa</a>
-                            <a href="search-results.html?q=Chocolate" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Chocolate</a>
-                            <a href="search-results.html?q=Kem+chiên" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Kem chiên</a>
+                            <a href="search-result.html" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Kem Mochi</a>
+                            <a href="search-result.html" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Matcha</a>
+                            <a href="search-result.html" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Kem dừa</a>
+                            <a href="search-result.html" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Chocolate</a>
+                            <a href="search-result.html" class="badge bg-light text-dark text-decoration-none border px-3 py-2">Kem chiên</a>
                         </div>
                     </div>
                 </aside>
@@ -186,12 +187,8 @@
                                     <a href="product-details.html"><img src="assets/img/products/dua.png"
                                             alt="Kem dừa"></a>
                                     <div class="product-actions">
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-heart"></i></button>
-                                        </a>
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-basket3"></i></button>
-                                        </a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-heart"></i></a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-basket3"></i></a>
                                     </div>
                                 </div>
                                 <a href="product-details.html" class="product-title">Kem dừa</a>
@@ -209,12 +206,8 @@
                                     <a href="product-details.html"><img src="assets/img/products/chuoi.png"
                                             alt="Kem chuối"></a>
                                     <div class="product-actions">
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-heart"></i></button>
-                                        </a>
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-basket3"></i></button>
-                                        </a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-heart"></i></a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-basket3"></i></a>
                                     </div>
                                 </div>
                                 <a href="product-details.html" class="product-title">Kem chuối</a>
@@ -232,12 +225,8 @@
                                     <a href="product-details.html"><img src="assets/img/products/mango.png"
                                             alt="Kem mango"></a>
                                     <div class="product-actions">
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-heart"></i></button>
-                                        </a>
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-basket3"></i></button>
-                                        </a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-heart"></i></a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-basket3"></i></a>
                                     </div>
                                 </div>
                                 <a href="product-details.html" class="product-title">Kem mango</a>
@@ -255,12 +244,8 @@
                                     <a href="product-details.html"><img src="assets/img/products/mochi.png"
                                             alt="Kem mochi"></a>
                                     <div class="product-actions">
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-heart"></i></button>
-                                        </a>
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-basket3"></i></button>
-                                        </a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-heart"></i></a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-basket3"></i></a>
                                     </div>
                                 </div>
                                 <a href="product-details.html" class="product-title">Kem mochi</a>
@@ -278,12 +263,8 @@
                                     <a href="product-details.html"><img src="assets/img/products/matcha.png"
                                             alt="Kem matcha"></a>
                                     <div class="product-actions">
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-heart"></i></button>
-                                        </a>
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-basket3"></i></button>
-                                        </a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-heart"></i></a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-basket3"></i></a>
                                     </div>
                                 </div>
                                 <a href="product-details.html" class="product-title">Kem matcha</a>
@@ -301,12 +282,8 @@
                                     <a href="product-details.html"><img src="assets/img/products/vanilla.png"
                                             alt="Kem vanilla"></a>
                                     <div class="product-actions">
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-heart"></i></button>
-                                        </a>
-                                        <a href="login.html">
-                                            <button class="btn-icon"><i class="bi bi-basket3"></i></button>
-                                        </a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-heart"></i></a>
+                                        <a href="login.html" class="btn-icon d-inline-flex align-items-center justify-content-center text-decoration-none"><i class="bi bi-basket3"></i></a>
                                     </div>
                                 </div>
                                 <a href="product-details.html" class="product-title">Kem vanilla</a>
@@ -332,7 +309,7 @@
                         </nav>
                     </div>
 
-                    <!-- Khối hiển thị khi KHÔNG tìm thấy kết quả (Mặc định ẩn, có thể bật lên khi cần) -->
+                    <!-- Khối hiển thị khi KHÔNG tìm thấy kết quả -->
                     <div id="noResultsBox" class="text-center py-5 d-none">
                         <img src="assets/img/empty.jpg" alt="Không tìm thấy kết quả" style="max-width: 220px;" class="mb-3 rounded">
                         <h4>Không tìm thấy sản phẩm nào!</h4>
@@ -359,10 +336,10 @@
                         <p>Đăng ký &amp; Đăng nhập ngay để làm thành viên.</p>
                     </div>
                     <div class="col-lg-4">
-                        <form class="subscribe-form">
-                            <input type="text" class="form-control" placeholder="Địa chỉ Email" required>
-                            <a href="login.html" type="submit" class="btn btn-green">Đăng ký ngay</a>
-                        </form>
+                        <div class="subscribe-form">
+                            <input type="text" class="form-control" placeholder="Địa chỉ Email">
+                            <a href="login.html" class="btn btn-green">Đăng ký ngay</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -404,10 +381,10 @@
                 <div class="col-lg-3 footer-newsletter">
                     <h6 class="footer-heading">Nhận bản tin ưu đãi</h6>
                     <p>Đăng ký để cập nhật những ưu đãi hấp dẫn và vị kem mới nhất</p>
-                    <form class="input-group">
+                    <div class="input-group">
                         <input type="text" class="form-control" placeholder="Nhập Email">
-                        <a href="login.html" class="btn" type="submit">Gửi</a>
-                    </form>
+                        <a href="login.html" class="btn">Gửi</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
@@ -416,23 +393,7 @@
         </div>
     </footer>
 
-    <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-
-    <!-- Script tự động cập nhật từ khóa tìm kiếm từ URL (VD: search-results.html?q=Mochi) -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const params = new URLSearchParams(window.location.search);
-            const query = params.get('q');
-            if (query && query.trim() !== '') {
-                document.getElementById('searchKeywordDisplay').textContent = '"' + query + '"';
-                document.getElementById('headerSearchInput').value = query;
-                document.getElementById('sidebarSearchInput').value = query;
-            }
-        });
-    </script>
+    <a href="#" class="back-to-top d-inline-flex align-items-center justify-content-center text-decoration-none" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
 </body>
 
 </html>
