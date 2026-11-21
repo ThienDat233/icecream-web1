@@ -462,13 +462,9 @@
                 const productName = productTitle ? productTitle.textContent.trim() : 'Sản phẩm';
 
                 if (action === 'cart') {
-                    const quantityInput = productCard ? null : document.querySelector('.qty-stepper input');
-                    const quantity = quantityInput
-                        ? Math.max(1, parseInt(quantityInput.value, 10) || 1)
-                        : 1;
-                    showToast('Đã thêm ' + productName + ' (số lượng: ' + quantity + ') vào giỏ hàng.');
+                    showToast('Đã thêm vào giỏ hàng.');
                 } else if (action === 'wishlist') {
-                    showToast('Đã thêm ' + productName + ' vào danh sách yêu thích.');
+                    showToast('Đã thêm vào danh sách yêu thích.');
                 }
             });
         })();
